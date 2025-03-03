@@ -26,7 +26,8 @@ const ReactElem = {
   {href: 'https://google.com' ,target:'_blank'},
   'Click me to VISIT GOOGLE'
  )
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('root')).
+render(
    
   <App/> 
   // <MyApp/>
