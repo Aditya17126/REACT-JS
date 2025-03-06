@@ -1,7 +1,7 @@
 function Chai(){
   return (
     <h3>
-      Learing React js with Chai 
+      Learing React js with Chai in 
     </h3>
   )
 }

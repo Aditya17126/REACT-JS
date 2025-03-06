@@ -6,13 +6,19 @@ import Card from './Components/Card'
 
 function App() {
   
-  let [cnt,setcnt]=useState(0);
+  let [cnt,setCnt]=useState(0);
   
 
   const  addvalue = () =>{
     if(cnt<20){
     cnt++;
-    setcnt(cnt);
+    setCnt(cnt => cnt + 1);
+    setCnt(cnt => cnt + 1);
+    setCnt(cnt => cnt + 1);
+    setCnt(cnt => cnt + 1);
+    setCnt(cnt => cnt + 1);
+    setCnt(cnt => cnt + 1);
+
     }
     console.log("VALUE ADDED",cnt);
 
@@ -21,7 +27,7 @@ function App() {
     console.log("VALUE REMOVED" ,cnt);
     if(cnt >0){
     cnt--;
-    setcnt(cnt);
+    setCnt(cnt);
     }
   }
   return (
@@ -29,9 +35,10 @@ function App() {
    <h1>ADITYA IS LEARNING REACT WITH CHAI</h1>
    <h2>Counter Value:{cnt}</h2>
    <button onClick={addvalue}>Add Value{cnt}</button><br />
-    <button onClick={removeValue}>Remove Value{cnt}</button>
+   <button onClick={removeValue}>Remove Value{cnt}</button>
     
     <h1 className='bg-green-600 text-black rounded-xl p-4'>Tailwind Test</h1>
+
   <Card username="Aditya" btntext="Click Karke Dekh"/>
   </> 
   )
