@@ -20,6 +20,7 @@ export default function Accordian() {
     
     setMultiple(cpyMultiple);
   }
+
   function handleSingleSelection(getCurrentId){
     setSelected(getCurrentId === selected ? null : getCurrentId);
   }
@@ -30,11 +31,13 @@ export default function Accordian() {
     // <div> ADITYA </div>
    <div className="wrapper">
      <button onClick={() => setFlag(!flag)} > Enable Multiple Selection</button>
+   
      <div className="accordian">
       {
          accordionData && accordionData.length > 0 ? (
          accordionData.map((dataitem)=> (
          <div className="item">
+            
             <div onClick={
               flag == true 
               ? ()=> handleMultipleSelection(dataitem.id) 

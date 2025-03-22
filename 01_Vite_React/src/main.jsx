@@ -31,7 +31,9 @@ render(
   // {/* <App/>  */}
   // {/* <MyApp/> */}
     //  {/* ReactElem */}
-     ReactanElem
+    //  ReactanElem
     //  {/* React_ELem */}
+
+    <App/>
     
 )
