@@ -62,9 +62,9 @@ function Home() {
        {error && <p> {error}</p>}
           
        <div className='movies-grid'>
-           {movies.map(function(movie)
+           {movies.map(function(movie ,index )
             {
-               return(<MovieCard movie={movie} key = {movie.imdbId}/>)
+               return(<MovieCard movie={movie} key = {index}/>)
             } 
           )}
        </div>

@@ -3,16 +3,17 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 // import './index.css'
 import App from './App.jsx'
-import "./Components/Movie_App/CSS/Index1.css"
-import App1 from './App1.jsx'
+import "./Components/04_Movie_App/CSS/Index1.css"
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <BrowserRouter>
+   
+    <BrowserRouter>
      <App />
-   </BrowserRouter> */}
-
-   <App1/>
+   </BrowserRouter>
+    {/* <App/> */}
+    
 
   </StrictMode>,
 )
