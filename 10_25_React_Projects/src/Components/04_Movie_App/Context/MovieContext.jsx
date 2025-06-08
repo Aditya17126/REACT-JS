@@ -31,10 +31,9 @@ const MovieContent = createContext()
   }
   
   function removeFromFavorites(movieId){
-     prev = prev.filter(function(movie){
-      return  movie.imdbId !== movieId
-    })
-    setFavorites(prev);
+    setFavorites((prev) =>
+      prev.filter((movie) => movie.imdbId !== movieId)
+    );
   }
    
   function isFavorites(movieId){

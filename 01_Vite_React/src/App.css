@@ -8,3 +8,9 @@
   align-items: center;
   background-color: beige;
 }
+.input-error{
+  border: 2px solid red;
+}
+.error-msg{
+  color: red;
+}

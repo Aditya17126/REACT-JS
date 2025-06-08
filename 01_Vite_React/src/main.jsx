@@ -1,39 +1,21 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React, { StrictMode } from 'react'
+import {createRoot} from 'react-dom/client'
 import App from './App.jsx'
+import { Provider } from 'react-redux'
+import Store from './Components/08_REDUX_TOOLKIT/Store.js'
 
-function MyApp(){
-  return (
-    <div>
-      <h1>CUSTOM APP !</h1>
-    </div>
-  ) 
-}
-const ReactElem = {
-  type:'a',
-  props:{
-    href:'https://google.com',
-    target:'_blank'
-  },
-  children:'Click me to visit google'
-}
- const ReactanElem = (
-  <a href="https://google.com" target='_blank'>Click Me To Visit Google</a>
- )
- const React_ELem = React.createElement( 
-  'a',
-  {href: 'https://google.com' ,target:'_blank'},
-  'Click me to VISIT GOOGLE'
- )
-ReactDOM.createRoot(document.getElementById('root')).
+
+createRoot(document.getElementById('root')).
 render(
 
-  // {/* <App/>  */}
-  // {/* <MyApp/> */}
-    //  {/* ReactElem */}
-    //  ReactanElem
-    //  {/* React_ELem */}
+/* <StrictMode> 
 
+  { <Provider store={Store}>  
     <App/>
-    
+  </Provider> }
+
+   </StrictMode>*/
+   
+  <App/>
+ 
 )

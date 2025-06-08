@@ -11,8 +11,10 @@ function Favourite() {
         <h2> Your Favourites</h2>
       
       <div className="movies-grid">
-        {favorites.map(function (movie,index) {
-          return <MovieCard movie={movie} key={index} />;
+        {favorites.map(function (movie) {
+           console.log(movie.imdbId);
+           console.log(movie);
+          return <MovieCard movie={movie} key={movie.imdbId} />;
         })}
       </div>
       </div> 
