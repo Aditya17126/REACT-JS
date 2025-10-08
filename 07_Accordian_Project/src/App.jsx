@@ -50,7 +50,7 @@ function App() {
 
   return (
     <>
-      {/* <Accordian/> */}
+      <Accordian/>
       <TodoInput  todoValue = {todoValue} handleAddtodos={handleAddtodos}  setTodoValue = {setTodoValue}/> 
       <TodoList Todo={todos} handleDeleteTodo = {handleDeleteTodo} handleEditTodo = {handleEditTodo}/>
     </>
