@@ -1,0 +1,76 @@
+
+.counter-container h1{
+  /* background: linear-gradient(to right bottom , yellow ,green);
+ color: transparent;
+ -webkit-background-clip: text; */
+ 
+  font-size: 50px;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #F9FAFB; approximate for gray-50 in Tailwind */
+}
+
+.counter-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.25rem; /* Tailwind’s mt-5 is 1.25rem (20px) */
+  justify-content: center;
+  gap: 1rem; /* gap-4 = 1rem (16px) in Tailwind */
+}
+
+.value-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.value-text {
+  font-size: 4.5rem; /* approximate text-7xl (Tailwind 7xl = 4.5rem) */
+  font-weight: bold;
+  /* For tabular-nums: use font-feature-settings or font-variant-numeric */
+  font-variant-numeric: tabular-nums;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem; /* tailwind gap-2 = 0.5rem (8px) */
+}
+.button-row button{
+  background-color:black;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+.undo-redo-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem; 
+}
+.undo-redo-row button{
+  background-color:black;
+  padding: 10px 50px;
+  border-radius: 10px;
+  color: whitesmoke;
+  font-size: 15px;
+ 
+}
+
+.history-indicator {
+  font-size: 0.875rem; /* tailwind text-sm = 0.875rem */
+  color: #6B7280; /* approximate muted-foreground color, e.g. Tailwind gray-500/600 */
+}
+
+.icon-small {
+  height: 1rem;
+  width: 1rem;
+  color: #F9FAFB;
+}

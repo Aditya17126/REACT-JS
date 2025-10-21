@@ -1,0 +1,25 @@
+.loadMoreButton {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  
+}
+.products-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+}
+
+.products-card{
+  padding: 20px 0px;
+   border: 2px solid black;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+  }
+ .products-card img{
+  width: 300px;
+ }

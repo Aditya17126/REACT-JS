@@ -1,0 +1,93 @@
+ /* Container holding all buttons */
+.parent-btn {
+  display: grid;
+  /* e.g. 3 columns; change as needed */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* Style for each button */
+.parent-btn button {
+  position: relative;
+  padding: 20px 40px;
+  background-color: #161a20;
+  border: none;
+  color: #f0f0f0;
+  border-radius: 50px;  /* makes it pill-shaped */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  overflow: hidden;     /* so pseudo-element won’t overflow visibly */
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  font-size: 18px;
+}
+
+/* Gradient border / glow effect behind button */
+.parent-btn button::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 50px;
+  background: linear-gradient(
+    to bottom right,
+    #008cff,
+    #e100ff
+  );
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* On hover, show gradient glow and slightly enlarge */
+.parent-btn button:hover::after {
+  opacity: 1;
+}
+
+.parent-btn button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 140, 255, 0.6),
+              0 0 20px rgba(225, 0, 255, 0.6);
+}
+
+ 
+ 
+ /* .my-btn-container{
+    display: "flex";
+    flex-direction: "column";
+    align-items: "center";
+  }
+
+  .parent-btn{
+    display: grid;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #btn{
+    padding: 20px 40px;
+    background-color: #161a20;
+    border: none;
+    color: #f0f0f0;
+    border-radius: 1000px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #btn::after{
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 101%;
+    border-radius: 1000px;
+    background: red;
+    background-image: linear-gradient(to bottom right , #008cff , #e100ff);
+    z-index: -1;
+  }
+  button:hover{
+    z-index: 0;
+    box-shadow: 40px 0 100px #008cff , -40px 0 100px #e100ff ;
+  } */

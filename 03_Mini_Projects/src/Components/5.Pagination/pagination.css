@@ -1,0 +1,43 @@
+.pagination{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.pagination-card{
+  padding: 20px 0px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(4 ,1fr);
+  gap: 10px;
+}
+.pagination__pages{
+  padding: 10px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination__pages > span{
+  padding: 15px 20px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.pagination__pages .arrows{
+  padding: 13px 20px ;
+}
+
+.pagination__selected{
+  background: linear-gradient(to right, #FFF44F, #F0E540);
+}
+
+.pagination__pages .arrows_disable{
+  padding: 13px 20px ;
+  opacity: 0;
+}
