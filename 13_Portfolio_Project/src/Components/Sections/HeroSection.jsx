@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Bio } from "../../Data/Constants";
 import TypewriterComponent from "typewriter-effect";
-import HeroImg from "../../Images/My_ChatGPT_image.png";
+import HeroImg from "../../../public/Images/My_ChatGPT_image.png";
 import HeroBgAnimation from "../HeroBgAnimation";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";

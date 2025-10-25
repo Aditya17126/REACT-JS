@@ -43,7 +43,7 @@ const Title = styled.div`
 `;
 
 const Desc = styled.div`
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
   font-weight: 600;
   color: ${({ theme }) => theme.text_secondary};

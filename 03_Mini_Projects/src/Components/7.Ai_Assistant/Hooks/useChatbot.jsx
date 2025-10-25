@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 function useChatbot() {
   const [messages, setMessages] = useState([]);
-   const apiKey = import.meta.env.VITE_OPENAI_API_KEY;
+  //  const apiKey = import.meta.env.VITE_OPENAI_API_KEY;
 
 
    const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -22,7 +22,7 @@ function useChatbot() {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${apiKey}`
+            // Authorization: `Bearer ${apiKey}`
           },
           body: JSON.stringify({
             model: "gpt-4o-mini",        // your chosen model

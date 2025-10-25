@@ -1,7 +1,9 @@
-import GmailClone from "../Images/Gmail_Clone.png"
-import MovieSearch from "../Images/Movie_Search.png";
-import NiccoloMiranda from "../Images/Niccolo_Miranda.png";
-import magma from "../Images/Magma.png"
+import GmailClone from "../../public/Images/Gmail_Clone.png"
+import MovieSearch from "../../public/Images/Movie_Search.png";
+import NiccoloMiranda from "../../public/Images/Niccolo_Miranda.png";
+import magma from "../../public/Images/Magma.png"
+import Whisked_Awayyyy from "../../public/Images/Whisked_Awayyyy.png";
+import GcetLogo from '../../public/GcetLogo.png'
 
 export const Bio = {
   name: "ADITYA GUPTA",
@@ -390,10 +392,10 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: "https://upload.wikimedia.org/wikipedia/en/b/b5/Galgotias_College_logo.jpg",
+    img: GcetLogo,
     school: "Galgotias College of Engineering And Technology ,Greater Noida,Up",
     date: "Nov 2021 - July 2025",
-    grade: "6.75 CGPA",
+    grade: "6.9 CGPA",
     desc: "I am currently pursuing a Bachelor's degree in Information Technology at Galgotias College of Engineering And Technology , Greater Noida ,Uttar Pradesh . I have completed 7 semesters and have a CGPA of 6.74. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the Google Developers Student Club (GDSC) at KIIT, where I am learning and working on exciting projects with a team of talented developers.",
     degree: "Bachelor of Technology - BTech,Information Technology",
   },
@@ -466,6 +468,16 @@ export const projects = [
     github: "https://github.com/Aditya17126/This-is-Magma-UI-Clone",
     webapp: "https://aditya-thisismagma-ui-clone.netlify.app/"
   },
-  
+   {
+  id: 4,
+  title: "Whisked-Awayy",
+  date: "September 2025",
+  description: "A dynamic React web app built to explore, search, and enjoy recipes in a clean, responsive experience. Created using React.js and modern front-end tooling, it features integration with a public recipe API, a search interface, detailed recipe view, and smooth user interactions.",
+  image : Whisked_Awayyyy,
+  tags : ["React", "JavaScript", "TailwindCSS", "API"],
+  category : "web app",
+  github : "https://github.com/Aditya17126/Whisked-Awayyyy",
+  webapp : "https://whisked-awayyyy.netlify.app/"
+}
 ];
 
