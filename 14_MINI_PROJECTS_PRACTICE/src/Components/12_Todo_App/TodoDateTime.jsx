@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 
 function TodoDateTime() {
   const [dateTime, setDateTime] = useState("");
-   useEffect(() => {
+  
+  useEffect(() => {
     const interval = setInterval(() => {
       const now = new Date();
       const formattedDate = now.toLocaleDateString();

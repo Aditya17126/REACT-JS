@@ -1,0 +1,79 @@
+.fileExplorerContainer{
+   background-color: whitesmoke;
+   min-height: 100vh;
+}
+
+.folder-wrapper {
+  margin-top: 5px; 
+}
+.folder-header{
+  margin-top: 6px;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px;
+  width: 300px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.file {
+  margin-top: 5px;
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.folder-header > span{
+  margin: 0 5px 2px 0;
+}
+
+.folder-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  padding: 2px 6px;
+  font-size: 1 rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn-newfile {
+  background-color: #28a745;
+}
+
+.btn-newfile:hover {
+  background-color: #1e7e34;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 4px 0;
+}
+
+.inputContainer-icon {
+  font-size: 1.1rem;
+}
+
+.inputContainer-input {
+  margin: 6px 0 0px 0;
+  padding: 5px;
+  display: flex;
+  border: 1px solid lightgray;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  
+}

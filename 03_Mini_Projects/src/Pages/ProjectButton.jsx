@@ -12,7 +12,12 @@ const projects = [
   { id: "5", name : "Pagination" , path: "Pagination" , folder: "Pagination"},
    { id: "6", name : "OTP Login" , path: "OtpLogin" , folder: "Otp_Login"},
    { id: "7", name : "Ai Assistant Chat Bot" , path: "AiAssistant" , folder: "Ai_Assistant"},
+   { id: "8", name : "File Explorer" , path: "FileExplorer" , folder: "File_Explorer"},
+   { id: "9", name : "CRUD Operations Using Axios" , path: "CrudOperation" , folder: "Crud_Using_Axios"},
+    { id: "10", name : "Toast Component" , path: "ToastNotification" , folder: "Toast_Component"},
+    { id: "11", name : "Stepper Component" , path: "Stepper" , folder: "Stepper_Component"},
 ];
+
 
 function ProjectButton() {
   const navigate = useNavigate();

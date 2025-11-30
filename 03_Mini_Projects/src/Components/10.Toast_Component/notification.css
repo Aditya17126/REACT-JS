@@ -1,0 +1,107 @@
+.toastNotification{
+  background-color: whitesmoke;
+  height: 100vh;
+  
+}
+.notification {
+  padding: 25px;
+  margin: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: sans-serif;
+  width: 90%;
+  font-size: 30px;
+}
+
+.success {
+  background-color: #4caf50;
+}
+.info {
+  background-color: #2196f3;
+}
+.warning {
+  background-color: #ff9800;
+}
+.error {
+  background-color: #f44336;
+}
+
+.closeBtn {
+  margin-left: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.top-right {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.top-left {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.bottom-right {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  margin-right: 50px;
+}
+
+.bottom-left {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+.toastButton-group {
+  display: flex;
+  gap: 20px;
+}
+
+.toastbtn {
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Success Button */
+.success-btn {
+  background: linear-gradient(135deg, #4caf50, #45a049);
+  color: white;
+}
+.success-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(72, 187, 120, 0.5);
+}
+
+/* Error Button */
+.error-btn {
+  background: linear-gradient(135deg, #f44336, #e53935);
+  color: white;
+}
+.error-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(244, 67, 54, 0.5);
+}
+
+.info-btn{
+  color: black;
+  background-color: #2196f3;
+}
+.info-btn:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px #ab0707;
+}

@@ -1,6 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import ProjectButton from "./Pages/ProjectButton";
 import { Navigate, Route, Routes } from "react-router-dom";
@@ -12,6 +10,10 @@ import menus from "./Components/4.Tree_View/data";
 import Pagination from "./Components/5.Pagination/Pagination";
 import OtpLogin from "./Components/6.Otp_Login/OtpLogin";
 import AiAssistant from "./Components/7.Ai_Assistant/AiAssistant";
+import FileExplorer from "./Components/8.File_Explorer/FileExplorer";
+import CrudOperation from "./Components/9.Crud_Using_Axios/CrudOperation";
+import ToastNotification from "./Components/10.Toast_Component/ToastNotification";
+import Stepper from "./Components/11.Stepper_Component/Stepper";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -35,16 +37,42 @@ function App() {
           element={<LoadMoreButton />}
         />
 
-        <Route path="/Components/4.Tree_View/TreeView" element={<TreeView menus={menus} />} />
-
-         <Route
-          path="/Components/5.Pagination/Pagination"
-          element={<Pagination/>}
+        <Route
+          path="/Components/4.Tree_View/TreeView"
+          element={<TreeView menus={menus} />}
         />
 
-        <Route path="/Components/6.Otp_Login/OtpLogin" element={<OtpLogin/>} />
+        <Route
+          path="/Components/5.Pagination/Pagination"
+          element={<Pagination />}
+        />
 
-        <Route path="/Components/7.Ai_Assistant/AiAssistant" element={<AiAssistant/>}/>
+        <Route path="/Components/6.Otp_Login/OtpLogin" element={<OtpLogin />} />
+
+        <Route
+          path="/Components/7.Ai_Assistant/AiAssistant"
+          element={<AiAssistant />}
+        />
+
+        <Route
+          path="Components/8.File_Explorer/FileExplorer"
+          element={<FileExplorer />}
+        />
+
+        <Route
+          path="Components/9.Crud_Using_Axios/CrudOperation"
+          element={<CrudOperation />}
+        />
+
+        <Route
+          path="/Components/10.Toast_Component/ToastNotification"
+          element={<ToastNotification />}
+        />
+
+        <Route
+          path="Components/11.Stepper_Component/Stepper"
+          element={<Stepper />}
+        />
 
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
